@@ -5,6 +5,15 @@ from openai.types.responses import ResponseTextDeltaEvent
 from agents import Runner
 from nutrition_agent import nutrition_agent
 
+# __init__.py converts the folder into a package and then we can access sub packages within 
+# the package through the dot syntax (from A.B import C).
+
+# For exporting nutrition_agent import nutrition_agent, we don't require any __init__.py as
+# they are both in the same folder.
+
+# We require __init__.py when we do 'from chatbot_complete.nutrition_agent import nutrition_agent' from
+# a folder outside chatbot_complete.
+
 dotenv.load_dotenv()
 
 
