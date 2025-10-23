@@ -1,51 +1,7 @@
 # ---- Secrets / env
 .env
 .env.local
-
-# ---- Python
-.venv/
-venv/
-__pycache__/
+.log
 *.pyc
-*.pyo
-*.pyd
-*.egg-info/
-.eggs/
-.dist/
-build/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-.tox/
-
-# ---- Jupyter
-.ipynb_checkpoints/
-
-# ---- Chroma (vector DB runtime)
-chroma/
-.chroma/
-
-# ---- OS / Editor
 .DS_Store
-Thumbs.db
-*.log
 .claude
-# .vscode/        # keep if you don't want to commit workspace settings
-
-# ---- Node / Frontend (optional but harmless)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnp
-.pnp.js
-package-lock.json
-.next/
-.cache/
-dist/
-build/
-
-# ---- Docker
-# DO NOT ignore your Dockerfile if you want it versioned
-# Dockerfile
