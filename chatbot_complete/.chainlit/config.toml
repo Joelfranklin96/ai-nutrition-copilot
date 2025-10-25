@@ -1,4 +1,5 @@
 [project]
+public = "public"
 # List of environment variables to be provided by each user to use the app.
 user_env = []
 
@@ -86,7 +87,7 @@ reaction_on_message_received = false
 
 [UI]
 # Name of the assistant.
-name = "Assistant"
+name = "Nutrition Copilot"
 
 # default_theme = "dark"
 
@@ -118,7 +119,7 @@ alert_style = "classic"
 # custom_js_attributes = "async type = \"module\""
 
 # Custom login page image, relative to public directory or external URL
-# login_page_image = "/public/custom-background.jpg"
+# login_page_image = "/public/logo.png"
 
 # Custom login page image filter (Tailwind internal filters, no dark/light variants)
 # login_page_image_filter = "brightness-50 grayscale"
@@ -129,10 +130,8 @@ alert_style = "classic"
 # custom_meta_image_url = "https://chainlit-cloud.s3.eu-west-3.amazonaws.com/logo/chainlit_banner.png"
 
 # Load assistant logo directly from URL.
-logo_file_url = ""
-
-# Load assistant avatar image directly from URL.
-default_avatar_file_url = ""
+logo_file_url = "/public/logo.png"
+default_avatar_file_url = "/public/logo.png"
 
 # Specify a custom build directory for the frontend.
 # This can be used to customize the frontend code.
